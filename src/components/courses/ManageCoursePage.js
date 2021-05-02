@@ -8,7 +8,7 @@ import { newCourse } from '../../../tools/mockData';
 import Spinner from '../common/Spinner';
 import { toast } from 'react-toastify';
 
-function ManageCoursePage({ authors, courses, loadAuthors, loadCourses, saveCourse, history, ...props }) {
+export function ManageCoursePage({ authors, courses, loadAuthors, loadCourses, saveCourse, history, ...props }) {
 
     const [ course, setCourse ] = useState({...props.course});
     const [ errors, setErrors ] = useState({});
